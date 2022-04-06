@@ -1,5 +1,6 @@
 package fpt.thanhluan.quanlynhahang.Adapter;
 
+import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -15,10 +16,12 @@ import fpt.thanhluan.quanlynhahang.R;
 
 public class NhanVienAdapter extends BaseAdapter {
 
+    Context context;
     ArrayList<NhanVien> listNhanViens;
     NhanVienDAO nhanVienDAO;
 
-    public NhanVienAdapter(ArrayList<NhanVien> listNhanViens, NhanVienDAO nhanVienDAO) {
+    public NhanVienAdapter(Context context, ArrayList<NhanVien> listNhanViens, NhanVienDAO nhanVienDAO) {
+        this.context = context;
         this.listNhanViens = listNhanViens;
         this.nhanVienDAO = nhanVienDAO;
     }

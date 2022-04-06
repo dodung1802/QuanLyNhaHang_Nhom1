@@ -16,7 +16,6 @@ public class PhongDAO {
 
     public PhongDAO(Context context) {
         dbHelper = new DbHelper(context);
-
     }
 
     public void open() {

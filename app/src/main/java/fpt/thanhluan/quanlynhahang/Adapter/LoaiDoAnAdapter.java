@@ -111,7 +111,7 @@ public class LoaiDoAnAdapter extends BaseAdapter {
         tvSua.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+               showDialogUpdate(position,objLoaiDoAn);
             }
         });
 
@@ -167,7 +167,6 @@ public class LoaiDoAnAdapter extends BaseAdapter {
         TextInputEditText edTenLoaiDA = dialog.findViewById(R.id.edTenLoaiDA);
         Button btnLuu = dialog.findViewById(R.id.btnSaveLoaiDA);
         Button btnHuy = dialog.findViewById(R.id.btnCancelLoaiDA);
-
         edTenLoaiDA.setText(objLoaiDoAn.getTenLoaiDA() + "");
 
         btnHuy.setOnClickListener(new View.OnClickListener() {

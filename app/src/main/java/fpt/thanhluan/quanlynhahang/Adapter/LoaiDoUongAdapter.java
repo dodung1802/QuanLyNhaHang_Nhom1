@@ -110,7 +110,7 @@ public class LoaiDoUongAdapter extends BaseAdapter {
         tvSua.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+         showDialogUpdate(position,objLoaiDoUong);
             }
         });
 
@@ -194,6 +194,5 @@ public class LoaiDoUongAdapter extends BaseAdapter {
         });
         dialog.show();
     }
-
 
 }

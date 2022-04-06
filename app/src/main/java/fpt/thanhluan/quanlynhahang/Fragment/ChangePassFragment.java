@@ -43,6 +43,7 @@ public class ChangePassFragment extends Fragment {
         btnCancel = view.findViewById(R.id.btnCancelUserChange);
 
         nhanVienDAO = new NhanVienDAO(getActivity());
+        nhanVienDAO.open();
 
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override

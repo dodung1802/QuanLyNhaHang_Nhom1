@@ -42,6 +42,7 @@ public class AddUserFragment extends Fragment {
         btnCancel = view.findViewById(R.id.btnCancelUser);
 
         nhanVienDAO = new NhanVienDAO(getActivity());
+        nhanVienDAO.open();
 
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
