@@ -69,6 +69,7 @@ public class BanAdapter extends BaseAdapter {
 
        //ánh xạ các biến
         TextView tvMaBan = itemview.findViewById(R.id.tvMaBan);
+        TextView tvSoBan = itemview.findViewById(R.id.tvSoBan);
         TextView tvTrangThai = itemview.findViewById(R.id.tvTrangThai);
         TextView tvMaPhong = itemview.findViewById(R.id.tvMaPhong);
         TextView tvXoa = itemview.findViewById(R.id.tvXoa);
@@ -76,6 +77,7 @@ public class BanAdapter extends BaseAdapter {
 
         //set text
         tvMaBan.setText("Mã bàn : "+objBan.getMaBan() + "");
+        tvSoBan.setText("Số bàn : "+objBan.getSoBan() + "");
         tvTrangThai.setText("Trạng thái : "+objBan.getTrangThai() + "");
         tvMaPhong.setText("Mã phòng : "+objBan.getMaPhong() + "");
 
@@ -131,6 +133,7 @@ public class BanAdapter extends BaseAdapter {
         Dialog dialog = new Dialog(context,R.style.Theme_AppCompat_Light_Dialog_Alert);
         dialog.setContentView(R.layout.dialog_ban);
 
+        TextInputEditText edSoBan = dialog.findViewById(R.id.edSoBan);
         TextInputEditText edTrangThai = dialog.findViewById(R.id.edTrangThai);
 
         Spinner spinner = dialog.findViewById(R.id.spinnerPhong);
@@ -154,6 +157,7 @@ public class BanAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 Ban objBan = new Ban();
+                objBan.setSoBan(Integer.parseInt(edSoBan.getText().toString()));
                 objBan.setTrangThai(Integer.parseInt(edTrangThai.getText().toString()));
 
                 Phong objPhong = (Phong) spinner.getSelectedItem();
@@ -181,6 +185,7 @@ public class BanAdapter extends BaseAdapter {
         Dialog dialog = new Dialog(context,R.style.Theme_AppCompat_Light_Dialog_Alert);
         dialog.setContentView(R.layout.dialog_ban);
 
+        TextInputEditText edSoBan = dialog.findViewById(R.id.edSoBan);
         TextInputEditText edTrangThai = dialog.findViewById(R.id.edTrangThai);
 
         Spinner spinner = dialog.findViewById(R.id.spinnerPhong);
@@ -217,6 +222,7 @@ public class BanAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
 
+                objBan.setSoBan(Integer.parseInt(edSoBan.getText().toString()));
                 objBan.setTrangThai(Integer.parseInt(edTrangThai.getText().toString()));
 
                 Phong objPhong = (Phong) spinner.getSelectedItem();

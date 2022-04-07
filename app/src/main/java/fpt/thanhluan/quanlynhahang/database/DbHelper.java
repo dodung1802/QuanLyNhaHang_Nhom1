@@ -65,7 +65,7 @@ public class DbHelper extends SQLiteOpenHelper {
                         "\t GiaDA \tINTEGER NOT NULL,\n" +
                         "\t SoLuongDA \tINTEGER NOT NULL,\n" +
                         "\t MaLoaiDA \tINTEGER REFERENCES LoaiDoAn(MaLoaiDA),\n" +
-                        "\tPRIMARY KEY( MaDU  AUTOINCREMENT)\n" +
+                        "\tPRIMARY KEY( MaDA  AUTOINCREMENT)\n" +
                         ");";
         db.execSQL(createTableDoAn);
 
@@ -74,7 +74,9 @@ public class DbHelper extends SQLiteOpenHelper {
 
                 "CREATE TABLE  Ban  (\n" +
                         "\t MaBan \tINTEGER NOT NULL,\n" +
+                        "\t SoBan \tINTEGER NOT NULL,\n" +
                         "\t TrangThai \tINTEGER NOT NULL,\n" +
+                        "\t MaPhong \tINTEGER REFERENCES Phong(MaPhong),\n" +
                         "\tPRIMARY KEY( MaBan  AUTOINCREMENT)\n" +
                         ");";
         db.execSQL(createTableBan);

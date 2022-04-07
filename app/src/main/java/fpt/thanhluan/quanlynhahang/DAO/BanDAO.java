@@ -25,6 +25,7 @@ public class BanDAO {
     //=================them======================//
     public long insertRow(Ban objBan){
         ContentValues values = new ContentValues();
+        values.put(Ban.COL_SOBAN,objBan.getSoBan());
         values.put(Ban.COL_TRANGTHAI,objBan.getTrangThai());
         values.put(Ban.COL_MAPHONG,objBan.getMaPhong());
         long res = db.insert(Ban.TB_NAME,null,values);
@@ -33,6 +34,7 @@ public class BanDAO {
     //=================sua======================//
     public int updateRow(Ban objBan){
         ContentValues values = new ContentValues();
+        values.put(Ban.COL_SOBAN,objBan.getSoBan());
         values.put(Ban.COL_TRANGTHAI,objBan.getTrangThai());
         values.put(Ban.COL_MAPHONG,objBan.getMaPhong());
         String[] arr = new String[]{objBan.getMaBan()+""};
@@ -56,11 +58,11 @@ public class BanDAO {
             while (!cursor.isAfterLast()){
                 Ban objBan = new Ban();
                 objBan.setMaBan(cursor.getInt(0));
-                objBan.setTrangThai(cursor.getInt(1));
-                objBan.setMaPhong(cursor.getInt(2));
+                objBan.setSoBan(cursor.getInt(1));
+                objBan.setTrangThai(cursor.getInt(2));
+                objBan.setMaPhong(cursor.getInt(3));
                 dsBan.add(objBan);
                 cursor.moveToNext();
-
             }
         }
         return dsBan;
@@ -71,16 +73,16 @@ public class BanDAO {
 
         Ban objBan = new Ban();
 
-        String str_sql = "SELECT MaBan,TrangThai,Ban.MaPhong,Phong.SoPhong" +
+        String str_sql = "SELECT MaBan,SoBan,TrangThai,Ban.MaPhong,Phong.SoPhong" +
                 " FROM Ban INNER JOIN Phong ON Ban.MaPhong = Phong.MaPhong WHERE MaBan = ?";
 
         Cursor cursor = db.rawQuery(str_sql,args);
 
         if(cursor.moveToFirst()){
-
             objBan.setMaBan(cursor.getInt(0));
-            objBan.setTrangThai(cursor.getInt(1));
-            objBan.setMaPhong(cursor.getInt(2));
+            objBan.setSoBan(cursor.getInt(1));
+            objBan.setTrangThai(cursor.getInt(2));
+            objBan.setMaPhong(cursor.getInt(3));
         }
         return objBan;
     }

@@ -34,6 +34,7 @@ public class LoginActivity extends AppCompatActivity {
         btnCancel = findViewById(R.id.btnCancel);
         chkRememberPass = findViewById(R.id.chkRememberPass);
         nhanVienDAO = new NhanVienDAO(this);
+        nhanVienDAO.open();
 
         //đọc user,pass trong sharedPreferences
 
@@ -76,7 +77,6 @@ public class LoginActivity extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext(),MainActivity.class);
                 i.putExtra("user",strUser);
                 startActivity(i);
-                finish();
             }else {
                 Toast.makeText(getApplicationContext(), "Tên đăng nhập " +
                                 "và mật khẩu không đúng",

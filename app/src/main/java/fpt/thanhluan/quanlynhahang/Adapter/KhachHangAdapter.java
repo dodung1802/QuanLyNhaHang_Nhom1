@@ -70,9 +70,9 @@ public class KhachHangAdapter extends BaseAdapter {
         TextView tvSua = itemview.findViewById(R.id.tvSua);
 
         //set text
-        tvMaKH.setText(objKhachHang.getMaKH());
-        tvTenKH.setText(objKhachHang.getTenKH());
-        tvSDT.setText(objKhachHang.getSDT());
+        tvMaKH.setText(objKhachHang.getMaKH()+"");
+        tvTenKH.setText(objKhachHang.getTenKH()+"");
+        tvSDT.setText(objKhachHang.getSDT()+"");
 
 
         tvXoa.setOnClickListener(new View.OnClickListener() {
