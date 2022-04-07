@@ -84,12 +84,12 @@ public class DoUongAdapter extends BaseAdapter {
 
 
         //set text
-        tvMaDU.setText(objDoUong.getMaDU() + "");
-        tvTenDU.setText(objDoUong.getTenDU() + "");
-        tvGiaDU.setText(objDoUong.getGiaDU() + "");
-        tvSoLuongDU.setText(objDoUong.getSoLuongDU() + "");
-        tvSizeDU.setText(objDoUong.getSizeDU() + "");
-        tvMaLoaiDU.setText(objDoUong.getMaLoaiDU() + "");
+        tvMaDU.setText("ID : "+objDoUong.getMaDU() + "");
+        tvTenDU.setText("Tên: "+objDoUong.getTenDU() + "");
+        tvGiaDU.setText("Gía : "+objDoUong.getGiaDU() + "");
+        tvSoLuongDU.setText("Số lượng : "+objDoUong.getSoLuongDU() + "");
+        tvSizeDU.setText("Size : "+objDoUong.getSizeDU() + "");
+        tvMaLoaiDU.setText("Loại : "+objDoUong.getMaLoaiDU() + "");
 
         tvXoa.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,35 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+    android:orientation="vertical"
+    android:background="#E9F7FD"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="50dp"
+        android:textColor="#07877B"
+        android:background="#FFF9C5"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="LOẠI ĐỒ ĂN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        />
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:id="@+id/tvMaLoaiDA"
         />
     <TextView
-        android:layout_width="150dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:id="@+id/tvTenLoaiDA"
         />
+
     <TextView
-        android:layout_width="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/purple_700"
+        android:padding="5dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="Xóa"
-        android:id="@+id/tvXoa"
+        android:text="Sửa"
+        android:id="@+id/tvSua"
         />
 
     <TextView
-        android:layout_width="50dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#F44336"
+        android:padding="5dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sửa"
-        android:textSize="20dp"
-        android:id="@+id/tvSua"
+        android:text="Xóa"
+        android:id="@+id/tvXoa"
         />
 
 

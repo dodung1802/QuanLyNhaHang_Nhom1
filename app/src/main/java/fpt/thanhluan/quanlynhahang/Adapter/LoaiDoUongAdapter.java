@@ -71,8 +71,8 @@ public class LoaiDoUongAdapter extends BaseAdapter {
         TextView tvSua = itemview.findViewById(R.id.tvSua);
 
         //set text
-        tvMaLoaiDU.setText(objLoaiDoUong.getMaLoaiDU() + "");
-        tvTenLoaiDU.setText(objLoaiDoUong.getTenLoaiDU() + "");
+        tvMaLoaiDU.setText("ID : "+objLoaiDoUong.getMaLoaiDU() + "");
+        tvTenLoaiDU.setText("Loại : "+objLoaiDoUong.getTenLoaiDU() + "");
 
 
         tvXoa.setOnClickListener(new View.OnClickListener() {

@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Typeface;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -78,7 +79,14 @@ public class BanAdapter extends BaseAdapter {
         //set text
         tvMaBan.setText("Mã bàn : "+objBan.getMaBan() + "");
         tvSoBan.setText("Số bàn : "+objBan.getSoBan() + "");
-        tvTrangThai.setText("Trạng thái : "+objBan.getTrangThai() + "");
+
+        if(objBan.getTrangThai()==0){
+            tvTrangThai.setText("Trạng thái : chưa sử dụng");
+            tvTrangThai.setTypeface(Typeface.DEFAULT_BOLD);
+        }else{
+            tvTrangThai.setText("Trạng thái : đã sử dụng");
+            tvTrangThai.setTypeface(Typeface.DEFAULT_BOLD);
+        }
         tvMaPhong.setText("Mã phòng : "+objBan.getMaPhong() + "");
 
 
@@ -198,7 +206,8 @@ public class BanAdapter extends BaseAdapter {
         Button btnLuu = dialog.findViewById(R.id.btnSaveBan);
         Button btnHuy = dialog.findViewById(R.id.btnCancelBan);
 
-        edTrangThai.setText(objBan.getMaBan()+"");
+        edSoBan.setText(objBan.getSoBan()+"");
+        edTrangThai.setText(objBan.getTrangThai()+"");
 
         ArrayList<Phong> listPhong = (ArrayList<Phong>) phongDAO.getAll();
 

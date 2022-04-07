@@ -49,7 +49,7 @@ public class DoUongDAO {
     //=================xoa======================//
     public int deleteRow(DoUong objDoUong){
         String[] arr = new String[]{objDoUong.getMaDU()+""};
-        int res = db.delete(DoUong.TB_NAME,"MaBan = ?",arr);
+        int res = db.delete(DoUong.TB_NAME,"MaDU = ?",arr);
         return res;
     }
 

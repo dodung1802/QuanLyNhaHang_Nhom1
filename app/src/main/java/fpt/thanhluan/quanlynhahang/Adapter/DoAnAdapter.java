@@ -82,11 +82,11 @@ public class DoAnAdapter extends BaseAdapter {
 
 
         //set text
-        tvMaDA.setText(objDoAn.getMaDA() + "");
-        tvTenDA.setText(objDoAn.getTenDA() + "");
-        tvGiaDA.setText(objDoAn.getGiaDA() + "");
-        tvSoLuongDA.setText(objDoAn.getSoLuongDA() + "");
-        tvMaLoaiDA.setText(objDoAn.getMaLoaiDA() + "");
+        tvMaDA.setText("ID : "+objDoAn.getMaDA() + "");
+        tvTenDA.setText("Tên đồ ăn : "+objDoAn.getTenDA() + "");
+        tvGiaDA.setText("Gía đồ ăn : "+objDoAn.getGiaDA() + "");
+        tvSoLuongDA.setText("Số lượng : "+objDoAn.getSoLuongDA() + "");
+        tvMaLoaiDA.setText("Loại đồ ăn : "+objDoAn.getMaLoaiDA() + "");
 
         tvXoa.setOnClickListener(new View.OnClickListener() {
             @Override

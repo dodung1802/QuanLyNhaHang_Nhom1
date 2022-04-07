@@ -32,7 +32,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edTrangThai"
-            android:hint="Nhập trạng thái bàn(còn ghi 1 hết ghi 0)"
+            android:hint="Nhập trạng thái bàn(chưa ghi 0 có ghi 1)"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </com.google.android.material.textfield.TextInputLayout>

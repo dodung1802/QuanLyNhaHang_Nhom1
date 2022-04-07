@@ -72,8 +72,8 @@ public class PhongAdapter extends BaseAdapter {
         TextView tvSua = itemview.findViewById(R.id.tvSua);
 
         //set text
-        tvMaPhong.setText(objPhong.getMaPhong() + "");
-        tvSoPhong.setText(objPhong.getSoPhong() + "");
+        tvMaPhong.setText("ID : "+objPhong.getMaPhong() + "");
+        tvSoPhong.setText("Số phòng : "+objPhong.getSoPhong() + "");
 
 
         tvXoa.setOnClickListener(new View.OnClickListener() {
