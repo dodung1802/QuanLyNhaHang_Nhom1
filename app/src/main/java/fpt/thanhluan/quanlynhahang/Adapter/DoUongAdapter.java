@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,15 +17,10 @@ import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
 
-import fpt.thanhluan.quanlynhahang.AdapterSpinner.LoaiDoAnAdapterSpinner;
 import fpt.thanhluan.quanlynhahang.AdapterSpinner.LoaiDoUongAdapterSpinner;
-import fpt.thanhluan.quanlynhahang.DAO.DoAnDAO;
 import fpt.thanhluan.quanlynhahang.DAO.DoUongDAO;
-import fpt.thanhluan.quanlynhahang.DAO.LoaiDoAnDAO;
 import fpt.thanhluan.quanlynhahang.DAO.LoaiDoUongDAO;
-import fpt.thanhluan.quanlynhahang.DTO.DoAn;
 import fpt.thanhluan.quanlynhahang.DTO.DoUong;
-import fpt.thanhluan.quanlynhahang.DTO.LoaiDoAn;
 import fpt.thanhluan.quanlynhahang.DTO.LoaiDoUong;
 import fpt.thanhluan.quanlynhahang.R;
 
@@ -79,8 +75,8 @@ public class DoUongAdapter extends BaseAdapter {
         TextView tvSizeDU = itemview.findViewById(R.id.tvSizeDU);
         TextView tvMaLoaiDU = itemview.findViewById(R.id.tvMaLoaiDU);
 
-        TextView tvXoa = itemview.findViewById(R.id.tvXoa);
-        TextView tvSua = itemview.findViewById(R.id.tvSua);
+        ImageButton tvXoa = itemview.findViewById(R.id.tvXoa);
+        ImageButton tvSua = itemview.findViewById(R.id.tvSua);
 
 
         //set text
@@ -89,7 +85,7 @@ public class DoUongAdapter extends BaseAdapter {
         tvGiaDU.setText("Gía : "+objDoUong.getGiaDU() + "");
         tvSoLuongDU.setText("Số lượng : "+objDoUong.getSoLuongDU() + "");
         tvSizeDU.setText("Size : "+objDoUong.getSizeDU() + "");
-        tvMaLoaiDU.setText("Loại : "+objDoUong.getMaLoaiDU() + "");
+        tvMaLoaiDU.setText("Loại : "+objDoUong.getTenLoaiDU() + "");
 
         tvXoa.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -171,8 +167,9 @@ public class DoUongAdapter extends BaseAdapter {
                 objDoUong.setSizeDU(edSizeDU.getText().toString());
 
                 LoaiDoUong objLoaiDoUong = (LoaiDoUong) spinner.getSelectedItem();
-                objLoaiDoUong.setMaLoaiDU(objLoaiDoUong.getMaLoaiDU());
 
+                objDoUong.setMaLoaiDU(objLoaiDoUong.getMaLoaiDU());
+                objDoUong.setTenLoaiDU(objLoaiDoUong.getTenLoaiDU());
                 long kq = doUongDAO.insertRow(objDoUong);
 
                 if(kq>0){
@@ -244,7 +241,9 @@ public class DoUongAdapter extends BaseAdapter {
                 objDoUong.setSizeDU(edSizeDU.getText().toString());
 
                 LoaiDoUong objLoaiDoUong = (LoaiDoUong) spinner.getSelectedItem();
-                objLoaiDoUong.setMaLoaiDU(objLoaiDoUong.getMaLoaiDU());
+
+                objDoUong.setMaLoaiDU(objLoaiDoUong.getMaLoaiDU());
+                objDoUong.setTenLoaiDU(objLoaiDoUong.getTenLoaiDU());
 
                 int kq = doUongDAO.updateRow(objDoUong);
 

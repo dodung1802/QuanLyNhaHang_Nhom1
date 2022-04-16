@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,14 +18,10 @@ import com.google.android.material.textfield.TextInputEditText;
 import java.util.ArrayList;
 
 import fpt.thanhluan.quanlynhahang.AdapterSpinner.LoaiDoAnAdapterSpinner;
-import fpt.thanhluan.quanlynhahang.AdapterSpinner.PhongAdapterSpinner;
 import fpt.thanhluan.quanlynhahang.DAO.DoAnDAO;
 import fpt.thanhluan.quanlynhahang.DAO.LoaiDoAnDAO;
-import fpt.thanhluan.quanlynhahang.DAO.PhongDAO;
-import fpt.thanhluan.quanlynhahang.DTO.Ban;
 import fpt.thanhluan.quanlynhahang.DTO.DoAn;
 import fpt.thanhluan.quanlynhahang.DTO.LoaiDoAn;
-import fpt.thanhluan.quanlynhahang.DTO.Phong;
 import fpt.thanhluan.quanlynhahang.R;
 
 public class DoAnAdapter extends BaseAdapter {
@@ -68,6 +65,7 @@ public class DoAnAdapter extends BaseAdapter {
         } else itemview = view;
         //lấy thông tin bản ghi dữ liệu
         final DoAn objDoAn = listDoAns.get(position);
+
         final int _index = position;
 
         //ánh xạ các biến
@@ -77,16 +75,16 @@ public class DoAnAdapter extends BaseAdapter {
         TextView tvSoLuongDA = itemview.findViewById(R.id.tvSoLuongDA);
         TextView tvMaLoaiDA = itemview.findViewById(R.id.tvMaLoaiDA);
 
-        TextView tvXoa = itemview.findViewById(R.id.tvXoa);
-        TextView tvSua = itemview.findViewById(R.id.tvSua);
+        ImageButton tvXoa = itemview.findViewById(R.id.tvXoa);
+        ImageButton tvSua = itemview.findViewById(R.id.tvSua);
 
 
         //set text
         tvMaDA.setText("ID : "+objDoAn.getMaDA() + "");
         tvTenDA.setText("Tên đồ ăn : "+objDoAn.getTenDA() + "");
-        tvGiaDA.setText("Gía đồ ăn : "+objDoAn.getGiaDA() + "");
+        tvGiaDA.setText("Gia đồ ăn : "+objDoAn.getGiaDA() + "");
         tvSoLuongDA.setText("Số lượng : "+objDoAn.getSoLuongDA() + "");
-        tvMaLoaiDA.setText("Loại đồ ăn : "+objDoAn.getMaLoaiDA() + "");
+        tvMaLoaiDA.setText("Loại đồ ăn : "+objDoAn.getTenLoaiDA() + "");
 
         tvXoa.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -166,8 +164,8 @@ public class DoAnAdapter extends BaseAdapter {
                 objDoAn.setSoLuongDA(Integer.parseInt(edSoLuongDA.getText().toString()));
 
                 LoaiDoAn objLoaiDoAn = (LoaiDoAn) spinner.getSelectedItem();
-                objLoaiDoAn.setMaLoaiDA(objLoaiDoAn.getMaLoaiDA());
-
+                objDoAn.setMaLoaiDA(objLoaiDoAn.getMaLoaiDA());
+                objDoAn.setTenLoaiDA(objLoaiDoAn.getTenLoaiDA());
                 long kq = doAnDAO.insertRow(objDoAn);
 
                 if(kq>0){
@@ -236,7 +234,8 @@ public class DoAnAdapter extends BaseAdapter {
                 objDoAn.setSoLuongDA(Integer.parseInt(edSoLuongDA.getText().toString()));
 
                 LoaiDoAn objLoaiDoAn = (LoaiDoAn) spinner.getSelectedItem();
-                objLoaiDoAn.setMaLoaiDA(objLoaiDoAn.getMaLoaiDA());
+                objDoAn.setMaLoaiDA(objLoaiDoAn.getMaLoaiDA());
+                objDoAn.setTenLoaiDA(objLoaiDoAn.getTenLoaiDA());
 
                 int kq = doAnDAO.updateRow(objDoAn);
 

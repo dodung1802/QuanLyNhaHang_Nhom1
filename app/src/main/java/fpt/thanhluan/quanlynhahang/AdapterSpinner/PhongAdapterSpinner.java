@@ -46,9 +46,9 @@ public class PhongAdapterSpinner extends BaseAdapter {
         Phong objPhong = listPhong.get(position);
 
         TextView tvMaPhong = itemView.findViewById(R.id.tvMaPhong);
-        tvMaPhong.setText(objPhong.getMaPhong()+"");
+        tvMaPhong.setText("Mã"+objPhong.getMaPhong()+"");
         TextView tvSoPhong = itemView.findViewById(R.id.tvSoPhong);
-        tvSoPhong.setText(objPhong.getSoPhong()+"");
+        tvSoPhong.setText("Số Phòng"+objPhong.getSoPhong()+"");
 
         return itemView;
     }

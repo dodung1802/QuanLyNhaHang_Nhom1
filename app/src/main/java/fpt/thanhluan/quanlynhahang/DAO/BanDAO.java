@@ -52,8 +52,13 @@ public class BanDAO {
         ArrayList<Ban>  dsBan = new ArrayList<>();
         String[] ds_cot = new String[]{"*"};
 
-        Cursor cursor = db.query(Ban.TB_NAME,ds_cot,null,null
-                ,null,null,null);
+//        Cursor cursor = db.query(Ban.TB_NAME,ds_cot,null,null
+//                ,null,null,null);
+
+        String str_sql = "SELECT MaBan,SoBan,TrangThai,Ban.MaPhong,Phong.SoPhong" +
+                " FROM Ban INNER JOIN Phong ON Ban.MaPhong = Phong.MaPhong";
+
+        Cursor cursor = db.rawQuery(str_sql,null);
         if (cursor.moveToFirst()){
             while (!cursor.isAfterLast()){
                 Ban objBan = new Ban();
@@ -61,6 +66,7 @@ public class BanDAO {
                 objBan.setSoBan(cursor.getInt(1));
                 objBan.setTrangThai(cursor.getInt(2));
                 objBan.setMaPhong(cursor.getInt(3));
+                objBan.setSoPhong(cursor.getString(4));
                 dsBan.add(objBan);
                 cursor.moveToNext();
             }
@@ -83,6 +89,7 @@ public class BanDAO {
             objBan.setSoBan(cursor.getInt(1));
             objBan.setTrangThai(cursor.getInt(2));
             objBan.setMaPhong(cursor.getInt(3));
+            objBan.setSoPhong(cursor.getString(4));
         }
         return objBan;
     }

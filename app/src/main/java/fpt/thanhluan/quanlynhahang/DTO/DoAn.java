@@ -7,6 +7,7 @@ public class DoAn {
     public int GiaDA;
     public int SoLuongDA;
     public int MaLoaiDA;
+    public String TenLoaiDA;
 
     public static final String TB_NAME = "DoAn";
     public static final String COL_MADA = "MaDA";
@@ -59,5 +60,13 @@ public class DoAn {
 
     public void setMaLoaiDA(int maLoaiDA) {
         MaLoaiDA = maLoaiDA;
+    }
+
+    public String getTenLoaiDA() {
+        return TenLoaiDA;
+    }
+
+    public void setTenLoaiDA(String tenLoaiDA) {
+        TenLoaiDA = tenLoaiDA;
     }
 }

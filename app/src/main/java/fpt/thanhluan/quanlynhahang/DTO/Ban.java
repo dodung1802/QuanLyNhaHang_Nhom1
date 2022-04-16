@@ -6,12 +6,14 @@ public class Ban {
     public int SoBan;
     public int TrangThai;
     public int MaPhong;
+    public String SoPhong;
 
     public static final String TB_NAME = "Ban";
     public static final String COL_MABAN = "MaBan";
     public static final String COL_SOBAN = "SoBan";
     public static final String COL_TRANGTHAI = "TrangThai";
     public static final String COL_MAPHONG = "MaPhong";
+    public static final String COL_SOPHONG = "SoPhong";
 
     public Ban() {
     }
@@ -43,4 +45,12 @@ public class Ban {
     public int getMaPhong() { return MaPhong; }
 
     public void setMaPhong(int maPhong) { MaPhong = maPhong;}
+
+    public String getSoPhong() {
+        return SoPhong;
+    }
+
+    public void setSoPhong(String soPhong) {
+        SoPhong = soPhong;
+    }
 }

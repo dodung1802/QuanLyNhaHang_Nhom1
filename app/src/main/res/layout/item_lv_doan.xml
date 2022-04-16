@@ -1,93 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:background="#E9F7FD"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:textColor="#07877B"
-        android:background="#FFF9C5"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:text="ĐỒ ĂN"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="40dp"
-        />
-    <TextView
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:padding="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:id="@+id/tvMaDA"
-        />
-    <TextView
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:padding="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:id="@+id/tvTenDA"
-        />
+    android:layout_height="match_parent"
+    android:background="#F8AEF0"
+    android:orientation="vertical">
 
-    <TextView
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:padding="5dp"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:id="@+id/tvGiaDA"
-        />
-    <TextView
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:padding="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:id="@+id/tvSoLuongDA"
-        />
+        android:orientation="horizontal">
 
-    <TextView
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:padding="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:id="@+id/tvMaLoaiDA"
-        />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_doan" />
+
+        <TextView
+            android:id="@+id/tvMaDA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
 
+    </LinearLayout>
 
-    <TextView
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        android:textColor="@color/purple_700"
-        android:padding="5dp"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sửa"
-        android:id="@+id/tvSua"
-        />
+        android:orientation="horizontal">
 
-    <TextView
-        android:gravity="center"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:textColor="#F44336"
-        android:padding="5dp"
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_doan"
+
+            />
+
+        <TextView
+            android:id="@+id/tvTenDA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Xóa"
-        android:id="@+id/tvXoa"
-        />
+        android:orientation="horizontal">
 
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_giatien"
+
+            />
+
+        <TextView
+            android:id="@+id/tvGiaDA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_doan"
+
+            />
+
+        <TextView
+            android:id="@+id/tvSoLuongDA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_doan"
+
+            />
+
+        <TextView
+            android:id="@+id/tvMaLoaiDA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+
+        >
+
+        <ImageButton
+
+            android:id="@+id/tvXoa"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_delete" />
+
+        <ImageButton
+            android:id="@+id/tvSua"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/ic_edit"
+            android:text="Sửa" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="#F8EA6B"
+
+        />
 
 
 </LinearLayout>

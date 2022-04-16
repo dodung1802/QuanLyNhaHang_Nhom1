@@ -57,8 +57,10 @@ public class DoUongDAO {
         ArrayList<DoUong>  dsDoUong = new ArrayList<>();
         String[] ds_cot = new String[]{"*"};
 
-        Cursor cursor = db.query(DoUong.TB_NAME,ds_cot,null,null
-                ,null,null,null);
+        String str_sql = "SELECT MaDU,TenDU,GiaDU,SoLuongDU,SizeDU,DoUong.MaLoaiDU,LoaiDoUong.TenLoaiDU" +
+                " FROM DoUong INNER JOIN LoaiDoUong ON DoUong.MaLoaiDU = LoaiDoUong.MaLoaiDU";
+
+        Cursor cursor = db.rawQuery(str_sql, null);
         if (cursor.moveToFirst()){
             while (!cursor.isAfterLast()){
                 DoUong objDoUong = new DoUong();
@@ -67,6 +69,8 @@ public class DoUongDAO {
                 objDoUong.setGiaDU(cursor.getInt(2));
                 objDoUong.setSoLuongDU(cursor.getInt(3));
                 objDoUong.setSizeDU(cursor.getString(4));
+                objDoUong.setMaLoaiDU(cursor.getInt(5));
+                objDoUong.setTenLoaiDU(cursor.getString(6));
 
                 dsDoUong.add(objDoUong);
                 cursor.moveToNext();
@@ -93,6 +97,8 @@ public class DoUongDAO {
             objDoUong.setGiaDU(cursor.getInt(2));
             objDoUong.setSoLuongDU(cursor.getInt(3));
             objDoUong.setSizeDU(cursor.getString(4));
+            objDoUong.setMaLoaiDU(cursor.getInt(5));
+            objDoUong.setTenLoaiDU(cursor.getString(6));
         }
         return objDoUong;
     }

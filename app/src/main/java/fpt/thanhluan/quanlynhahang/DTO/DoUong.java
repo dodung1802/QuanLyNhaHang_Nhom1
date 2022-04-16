@@ -8,6 +8,7 @@ public class DoUong {
     public int SoLuongDU;
     public String SizeDU;
     public int MaLoaiDU;
+    public String TenLoaiDU;
 
     public static final String TB_NAME = "DoUong";
     public static final String COL_MADU = "MaDU";
@@ -66,5 +67,13 @@ public class DoUong {
 
     public void setMaLoaiDU(int maLoaiDU) {
         MaLoaiDU = maLoaiDU;
+    }
+
+    public String getTenLoaiDU() {
+        return TenLoaiDU;
+    }
+
+    public void setTenLoaiDU(String tenLoaiDU) {
+        TenLoaiDU = tenLoaiDU;
     }
 }

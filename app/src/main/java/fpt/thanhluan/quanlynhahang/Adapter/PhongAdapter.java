@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -68,12 +69,12 @@ public class PhongAdapter extends BaseAdapter {
 //ánh xạ các bviuến
         TextView tvMaPhong = itemview.findViewById(R.id.tvMaPhong);
         TextView tvSoPhong = itemview.findViewById(R.id.tvSoPhong);
-        TextView tvXoa = itemview.findViewById(R.id.tvXoa);
-        TextView tvSua = itemview.findViewById(R.id.tvSua);
+        ImageButton tvXoa = itemview.findViewById(R.id.tvXoa);
+        ImageButton tvSua = itemview.findViewById(R.id.tvSua);
 
         //set text
-        tvMaPhong.setText("ID : "+objPhong.getMaPhong() + "");
-        tvSoPhong.setText("Số phòng : "+objPhong.getSoPhong() + "");
+        tvMaPhong.setText("Mã phòng : "+objPhong.getMaPhong() + "");
+        tvSoPhong.setText("Tên phòng : "+objPhong.getSoPhong() + "");
 
 
         tvXoa.setOnClickListener(new View.OnClickListener() {

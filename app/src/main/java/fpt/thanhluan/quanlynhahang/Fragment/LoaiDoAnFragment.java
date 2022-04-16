@@ -14,11 +14,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
-import fpt.thanhluan.quanlynhahang.Adapter.KhachHangAdapter;
 import fpt.thanhluan.quanlynhahang.Adapter.LoaiDoAnAdapter;
-import fpt.thanhluan.quanlynhahang.DAO.KhachHangDAO;
 import fpt.thanhluan.quanlynhahang.DAO.LoaiDoAnDAO;
-import fpt.thanhluan.quanlynhahang.DTO.KhachHang;
 import fpt.thanhluan.quanlynhahang.DTO.LoaiDoAn;
 import fpt.thanhluan.quanlynhahang.R;
 

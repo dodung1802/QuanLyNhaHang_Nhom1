@@ -5,12 +5,11 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Typeface;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -73,8 +72,8 @@ public class BanAdapter extends BaseAdapter {
         TextView tvSoBan = itemview.findViewById(R.id.tvSoBan);
         TextView tvTrangThai = itemview.findViewById(R.id.tvTrangThai);
         TextView tvMaPhong = itemview.findViewById(R.id.tvMaPhong);
-        TextView tvXoa = itemview.findViewById(R.id.tvXoa);
-        TextView tvSua = itemview.findViewById(R.id.tvSua);
+        ImageButton tvXoa = itemview.findViewById(R.id.tvXoa);
+        ImageButton tvSua = itemview.findViewById(R.id.tvSua);
 
         //set text
         tvMaBan.setText("Mã bàn : "+objBan.getMaBan() + "");
@@ -87,7 +86,7 @@ public class BanAdapter extends BaseAdapter {
             tvTrangThai.setText("Trạng thái : đã sử dụng");
             tvTrangThai.setTypeface(Typeface.DEFAULT_BOLD);
         }
-        tvMaPhong.setText("Mã phòng : "+objBan.getMaPhong() + "");
+        tvMaPhong.setText("Thuộc phòng : "+objBan.getSoPhong() + "");
 
 
         tvXoa.setOnClickListener(new View.OnClickListener() {
@@ -170,6 +169,7 @@ public class BanAdapter extends BaseAdapter {
 
                 Phong objPhong = (Phong) spinner.getSelectedItem();
                 objBan.setMaPhong(objPhong.getMaPhong());
+                objBan.setSoPhong(objPhong.getSoPhong());
 
                 long kq = banDAO.insertRow(objBan);
 
@@ -209,7 +209,7 @@ public class BanAdapter extends BaseAdapter {
         edSoBan.setText(objBan.getSoBan()+"");
         edTrangThai.setText(objBan.getTrangThai()+"");
 
-        ArrayList<Phong> listPhong = (ArrayList<Phong>) phongDAO.getAll();
+        ArrayList<Phong> listPhong = phongDAO.getAll();
 
         for (int j = 0; j<listPhong.size();j++){
             Phong objPhong = listPhong.get(j);
@@ -236,6 +236,7 @@ public class BanAdapter extends BaseAdapter {
 
                 Phong objPhong = (Phong) spinner.getSelectedItem();
                 objBan.setMaPhong(objPhong.getMaPhong());
+                objBan.setSoPhong(objPhong.getSoPhong());
 
                 int kq = banDAO.updateRow(objBan);
 

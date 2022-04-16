@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -68,8 +69,8 @@ public class LoaiDoAnAdapter extends BaseAdapter {
 //ánh xạ các bviuến
         TextView tvMaLoaiDA = itemview.findViewById(R.id.tvMaLoaiDA);
         TextView tvTenLoaiDA = itemview.findViewById(R.id.tvTenLoaiDA);
-        TextView tvXoa = itemview.findViewById(R.id.tvXoa);
-        TextView tvSua = itemview.findViewById(R.id.tvSua);
+        ImageButton tvXoa = itemview.findViewById(R.id.tvXoa);
+        ImageButton tvSua = itemview.findViewById(R.id.tvSua);
 
         //set text
         tvMaLoaiDA.setText("ID : "+objLoaiDoAn.getMaLoaiDA() + "");

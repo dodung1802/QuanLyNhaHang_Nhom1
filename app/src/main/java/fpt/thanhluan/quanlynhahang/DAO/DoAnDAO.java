@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import fpt.thanhluan.quanlynhahang.DTO.Ban;
 import fpt.thanhluan.quanlynhahang.DTO.DoAn;
@@ -65,9 +66,14 @@ public class DoAnDAO {
 
         String[] ds_cot = new String[]{"*"};
 
-        Cursor cursor = db.query(DoAn.TB_NAME, ds_cot, null, null, null, null, null);
+//        Cursor cursor = db.query(DoAn.TB_NAME, ds_cot, null, null, null, null, null);
 
 //        String Bang_doAn="SELECT MaDA,TenDA,GiaDA,SoLuongDA,LoaiDoAn.MaLoaiDA,TenLoaiDA"+"FROM DoAn INNER JOIN LoaiDoAn ON DoAn.MaLoaiDA=LoaiDoAn.MaLoaiDA WHERE ";
+
+        String str_sql = "SELECT MaDA,TenDA,GiaDA,SoLuongDA,DoAn.MaLoaiDA,LoaiDoAn.TenLoaiDA" +
+                " FROM DoAn INNER JOIN LoaiDoAn ON DoAn.MaLoaiDA = LoaiDoAn.MaLoaiDA";
+
+        Cursor cursor = db.rawQuery(str_sql, null);
 
         if (cursor.moveToFirst()) {
             while (!cursor.isAfterLast()) {
@@ -77,6 +83,7 @@ public class DoAnDAO {
                 objDoAn.setGiaDA(cursor.getInt(2));
                 objDoAn.setSoLuongDA(cursor.getInt(3));
                 objDoAn.setMaLoaiDA(cursor.getInt(4));
+                objDoAn.setTenLoaiDA(cursor.getString(5));
 
                 dsDAn.add(objDoAn);
                 cursor.moveToNext();
@@ -110,6 +117,26 @@ public class DoAnDAO {
         return objDoAn;
     }
 
+    public DoAn getId(String id) {
+        String str_sql = "SELECT * FROM DoAn WHERE MaDA=" + id;
 
+        Cursor cursor = db.rawQuery(str_sql, null);
+        DoAn objDoAn = new DoAn();
+        if (cursor.moveToFirst()) {
+
+
+            objDoAn.setMaDA(cursor.getInt(0));
+            objDoAn.setTenDA(cursor.getString(1));
+            objDoAn.setGiaDA(cursor.getInt(2));
+            objDoAn.setSoLuongDA(cursor.getInt(3));
+            objDoAn.setMaLoaiDA(cursor.getInt(4));
+            objDoAn.setTenLoaiDA(cursor.getString(5));
+
+
+        }
+
+
+        return objDoAn;
+    }
 
 }

@@ -26,14 +26,62 @@
         <entry key="..\:/DU_AN_1/QuanLyNhaHang/app/src/main/res/layout/item_lv_loaidouong.xml" value="0.1" />
         <entry key="..\:/DU_AN_1/QuanLyNhaHang/app/src/main/res/layout/item_lv_nhanvien.xml" value="0.25181159420289856" />
         <entry key="..\:/DU_AN_1/QuanLyNhaHang/app/src/main/res/layout/item_lv_phong.xml" value="0.23822463768115942" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/drawable/boderliss.xml" value="0.156" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/drawable/ic_add_douong.xml" value="0.154" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/drawable/ic_datee.xml" value="0.154" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/drawable/ic_delete.xml" value="0.154" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/drawable/ic_doan.xml" value="0.154" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/drawable/ic_douong.xml" value="0.154" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/drawable/ic_giatien.xml" value="0.154" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/drawable/ic_launcher_background.xml" value="0.154" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/drawable/ic_phongg.xml" value="0.154" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/drawable/ic_top.xml" value="0.156" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/drawable/menu.xml" value="0.154" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/drawable/outline_build_24.xml" value="0.154" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/drawable/outline_delete_forever_24.xml" value="0.154" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/drawable/outline_done_24.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/activity_login.xml" value="0.25407608695652173" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/activity_main.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/chip_item.xml" value="0.25407608695652173" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/chip_item_do_an.xml" value="0.25407608695652173" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/chip_item_do_uong.xml" value="0.25407608695652173" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/dialog_ban.xml" value="0.25407608695652173" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/dialog_chip_do_an.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/dialog_do_an.xml" value="0.25407608695652173" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/dialog_do_uong.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/dialog_hoa_don.xml" value="0.264" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/dialog_loai_do_an.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/dialog_lv_do_an_hoadon.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/dialog_lv_do_uong_hoadon.xml" value="0.25407608695652173" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/dialog_phong.xml" value="0.264" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/fragment_do_an.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/fragment_do_uong.xml" value="0.25407608695652173" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/fragment_hoa_don.xml" value="0.264" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/fragment_khach_hang.xml" value="0.25407608695652173" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/fragment_loai_do_an.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/fragment_loai_do_uong.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/fragment_phong.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/fragment_top_do_an.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/item_hoadon.xml" value="0.264" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/item_lv_ban.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/item_lv_do_an_hoadon.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/item_lv_do_uong_hoadon.xml" value="0.25407608695652173" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/item_lv_doan.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/item_lv_douong.xml" value="0.25407608695652173" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/item_lv_loaidoan.xml" value="0.264" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/item_lv_loaidouong.xml" value="0.176" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/item_lv_phong.xml" value="0.264" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/item_lv_top_do_an.xml" value="0.264" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/nav_header.xml" value="0.25407608695652173" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/spinner_item_do_an.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/spinner_item_ban.xml" value="0.25407608695652173" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/spinner_item_do_an.xml" value="0.2" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/spinner_item_do_uong.xml" value="0.25407608695652173" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/spinner_item_khach_hang.xml" value="0.25407608695652173" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/spinner_item_loai_do_uong.xml" value="0.12360688956433637" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/spinner_item_phong.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/spinner_item_khach_hang.xml" value="0.264" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/spinner_item_khach_hang_hd.xml" value="0.25407608695652173" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/spinner_item_loai_do_an.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/spinner_item_loai_do_uong.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/layout/spinner_item_phong.xml" value="0.144" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/QuanLyNhaHang/app/src/main/res/menu/drawer_view.xml" value="0.11302083333333333" />
       </map>
     </option>
   </component>
